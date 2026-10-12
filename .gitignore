@@ -14,18 +14,12 @@ build/
 *.egg
 
 # Frappe/Bench
-sites/*/private/
-sites/*/public/
-sites/*/logs/
-sites/*/errors/
-sites/*/local/
-sites/*/locks/
-sites/*.log
-sites/*.pid
+sites/
 .env
 node_modules/
 .yarn/
 .cache/
+yarn.lock
 
 # Database
 *.sql
