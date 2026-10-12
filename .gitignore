@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.eggs/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Frappe/Bench
+sites/*/private/
+sites/*/public/
+sites/*/logs/
+sites/*/errors/
+sites/*/local/
+sites/*/locks/
+sites/*.log
+sites/*.pid
+.env
+node_modules/
+.yarn/
+.cache/
+
+# Database
+*.sql
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Config (contains sensitive data)
+sites/common_site_config.json
+sites/*/site_config.json
+config/redis_*.conf
+config/pids/*
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Logs
+logs/
+*.log
+
+# Assets (rebuildable)
+apps/*/node_modules/
+apps/frappe/frappe/dist/
+apps/*/public/build/
