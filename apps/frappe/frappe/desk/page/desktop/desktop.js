@@ -263,7 +263,7 @@ class DesktopPage {
 			},
 			{
 				icon: "life-buoy",
-				label: "Frappe Support",
+				label: "DAX Support",
 				onclick: function () {
 					window.open("https://support.frappe.io/help", "_blank");
 				},
