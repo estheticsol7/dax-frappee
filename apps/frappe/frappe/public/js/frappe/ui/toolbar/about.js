@@ -14,19 +14,19 @@ frappe.ui.misc.about = function () {
 				<div class="about-frappe-header flex flex-col justify-center items-center gap-1.5">
 					<img src="/assets/frappe/images/frappe-comp-logo.svg" alt="Frappe" class="about-frappe-wordmark">
 					<p class="about-tagline text-p-sm text-ink-gray-5 m-0">${__(
-						"Open Source applications for the web."
-					)}</p>
+			"Open Source applications for the web."
+		)}</p>
 				</div>
 				<div class="about-social-btns flex gap-1">
-					<a href="https://frappe.io/" target="_blank" class="es-button" data-variant="ghost"
+					<a href="https://daxeco.com" target="_blank" class="es-button" data-variant="ghost"
 						data-icon-button="true" title="${__("Website")}" aria-label="${__("Website")}">
 						${frappe.utils.icon("globe", "sm", "", "", "", true)}
 					</a>
-					<a href="https://github.com/frappe" target="_blank" class="es-button" data-variant="ghost"
+					<a href="https://github.com/estheticsol7/dax-frappee" target="_blank" class="es-button" data-variant="ghost"
 						data-icon-button="true" title="${__("Source Code")}" aria-label="${__("Source Code")}">
 						${frappe.utils.icon("github", "sm", "", "", "", true)}
 					</a>
-					<a href="https://discuss.frappe.io" target="_blank" class="es-button" data-variant="ghost"
+					<a href="https://daxeco.com" target="_blank" class="es-button" data-variant="ghost"
 						data-icon-button="true" title="${__("Forum")}" aria-label="${__("Forum")}">
 						${frappe.utils.icon("message-circle", "sm", "", "", "", true)}
 					</a>
@@ -37,16 +37,15 @@ frappe.ui.misc.about = function () {
 				<div class="about-info-row flex items-center justify-between">
 					<div class="about-info-content flex flex-col gap-1">
 						<div class="about-info-title inline-flex items-center gap-1 text-base-semibold text-ink-gray-8">${__(
-							"Frappe Framework Version"
-						)}</div>
+			"DAX Framework Version"
+		)}</div>
 						<div class="about-info-sub text-p-sm text-ink-gray-5" id="about-framework-version">
 							${__("Loading...")}
 						</div>
 					</div>
 				</div>
-				${
-					frappe.boot.is_fc_site
-						? `<div class="about-info-row flex items-center justify-between">
+				${frappe.boot.is_fc_site
+			? `<div class="about-info-row flex items-center justify-between">
 					<div class="about-info-content flex flex-col gap-1">
 						<a href="https://frappecloud.com/support" target="_blank" class="about-info-title inline-flex items-center gap-1 about-info-title-link text-base-semibold text-ink-gray-8 no-underline">
 							${__("Frappe Support")}
@@ -57,14 +56,14 @@ frappe.ui.misc.about = function () {
 						</div>
 					</div>
 				</div>`
-						: ""
-				}
+			: ""
+		}
 			</div>
 
 			<div class="about-section-header flex items-center justify-between w-full">
 				<div class="about-section-label text-2xs text-ink-gray-6 text-uppercase">${__(
-					"Installed Apps"
-				)}</div>
+			"Installed Apps"
+		)}</div>
 				<button class="es-button hidden" data-variant="ghost" data-icon-button="true"
 					id="copy-apps-info" title="${__("Copy Apps Version")}" aria-label="${__("Copy Apps Version")}">
 					${frappe.utils.icon("clipboard", "sm", "", "", "", true)}
@@ -79,7 +78,7 @@ frappe.ui.misc.about = function () {
 		.removeClass("hide")
 		.prepend(
 			`<div class="about-footer text-p-sm text-ink-gray-4 text-center">
-			${__("&copy; Frappe Technologies Pvt. Ltd. and contributors")}
+			${__("&copy; Esthetics Solutions Pvt. Ltd. and contributors")}
 		</div>`
 		);
 

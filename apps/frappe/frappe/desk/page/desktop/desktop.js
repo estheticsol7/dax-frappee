@@ -190,8 +190,7 @@ class DesktopPage {
 		const $container = $(`<div class="icons-container"></div>`).appendTo(this.wrapper);
 		const columns = frappe.is_mobile() ? 3 : null;
 		const $grid = $(
-			`<div class="icons" style="display: grid;${
-				columns ? ` grid-template-columns: repeat(${columns}, 1fr);` : ""
+			`<div class="icons" style="display: grid;${columns ? ` grid-template-columns: repeat(${columns}, 1fr);` : ""
 			}"></div>`
 		).appendTo($container);
 
@@ -265,7 +264,7 @@ class DesktopPage {
 				icon: "life-buoy",
 				label: "DAX Support",
 				onclick: function () {
-					window.open("https://support.frappe.io/help", "_blank");
+					window.open("https://support.daxeco.com", "_blank");
 				},
 				order: 40,
 			},
