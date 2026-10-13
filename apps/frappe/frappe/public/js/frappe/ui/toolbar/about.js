@@ -119,7 +119,7 @@ frappe.ui.misc.about = function () {
 
 	const show_versions = function (versions) {
 		if (versions.frappe) {
-			$("#about-framework-version").text(`frappe: ${get_version_text(versions.frappe)}`);
+			$("#about-framework-version").text(`dax: ${get_version_text(versions.frappe)}`);
 		}
 
 		// Show update button on Frappe Cloud sites when updates are available

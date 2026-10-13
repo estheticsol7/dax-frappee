@@ -18,7 +18,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="white">
 	<meta name="mobile-web-app-capable" content="yes">
-	<title>{{ app_name }}</title>
+	<title>{{ app_name or "DAX" }}</title>
 	{% if desk_theme.lower() == "automatic" %}
 	<style>
 		/* The dark theme tokens only apply once desk.js swaps data-theme from
