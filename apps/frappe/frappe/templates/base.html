@@ -15,8 +15,13 @@
 	{% block favicon %}
 	<link
 		rel="shortcut icon"
-		href="{{ (favicon or "/assets/frappe/images/frappe-favicon.svg") | abs_url }}"
-		type="image/x-icon"
+		href="{{ (favicon or "/assets/frappe/images/dax-logo.png") | abs_url }}"
+		type="image/png"
+	>
+	<link
+		rel="icon"
+		href="{{ (favicon or "/assets/frappe/images/dax-logo.png") | abs_url }}"
+		type="image/png"
 	>
 	{% endblock %}
 
