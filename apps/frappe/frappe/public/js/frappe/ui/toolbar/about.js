@@ -138,14 +138,15 @@ frappe.ui.misc.about = function () {
 		for (const app_name in versions) {
 			if (app_name === "frappe") continue;
 			const app = versions[app_name];
+			const display_app_name = app_name === "erpnext" ? "daxerp" : app_name;
 			const version_text = get_version_text(app);
-			const title = `${app_name}: ${app.version}`;
+			const title = `${display_app_name}: ${app.version}`;
 
 			$(`<div class="about-app-row flex items-center gap-3 cursor-pointer" role="button" tabindex="0" title="${title}">
 					${render_app_icon(app_name, app)}
 					<div class="about-app-info flex-1 min-w-0">
 						<div class="about-app-name text-base-semibold text-ink-gray-8">${__(app.title)}</div>
-						<div class="about-app-version text-sm text-ink-gray-5">${app_name}: ${version_text}</div>
+						<div class="about-app-version text-sm text-ink-gray-5">${display_app_name}: ${version_text}</div>
 					</div>
 				</div>`).appendTo($wrap);
 		}
