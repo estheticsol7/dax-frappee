@@ -150,7 +150,7 @@ frappe.views.Workspace = class Workspace {
 			return;
 		}
 
-		this.page.set_title(__(page.name));
+		this.page.set_title(__(page.title || page.name));
 		this.show_page(page);
 	}
 
@@ -211,8 +211,9 @@ frappe.views.Workspace = class Workspace {
 		const route = frappe.get_route();
 		const page = (route[1] == "private" ? route[2] : route[1]) || default_page.name;
 		const is_public = route[1] ? route[1] != "private" : default_page.public;
+		const workspace = this.workspaces.find((workspace) => workspace.name === page);
 
-		return { name: page, public: is_public };
+		return { name: page, public: is_public, title: workspace?.title };
 	}
 
 	// Where a page is, as a route. A public page is named by its name and a private one by its
